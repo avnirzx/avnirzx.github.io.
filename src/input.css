@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Poppins", sans-serif;
+  @apply font-normal;
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply w-full h-full mx-auto max-w-[1240px] px-2 md:px-8;
+}
+
+.btn-primary {
+  @apply bg-blue-custom rounded-xl text-white py-3 px-6 transition-all duration-300 hover:bg-blue-light-custom;
+}
+
+.btn-secondary {
+  @apply bg-white border-2 border-gray-custom rounded-xl text-gray-custom py-3 px-6 transition-all duration-300 hover:bg-white-custom;
+}
+
+.nav li {
+  @apply text-gray-custom-2;
+}
+.nav a {
+  @apply transition-all duration-300 hover:text-blue-custom;
+}
+
+.nav-active {
+  @apply text-blue-custom;
+}
+
+.bg-hero {
+  @apply w-full h-full rounded-lg bg-white-custom md:rounded-3xl lg:max-h-[580px];
+}
+
+.bg-stats {
+  @apply rounded-lg bg-white py-6 px-7 md:rounded-xl;
+  box-shadow: 0px 25px 54px 0px rgba(239, 239, 239, 1);
+  -webkit-box-shadow: 0px 25px 54px 0px rgba(239, 239, 239, 1);
+  -moz-box-shadow: 0px 25px 54px 0px rgba(239, 239, 239, 1);
+}
+
+.nav-card,
+.works-card,
+.testimonial-card {
+  box-shadow: 0px 14px 25px 0px rgba(242, 242, 242, 1);
+  -webkit-box-shadow: 0px 14px 25px 0px rgba(242, 242, 242, 1);
+  -moz-box-shadow: 0px 14px 25px 0px rgba(242, 242, 242, 1);
+}
